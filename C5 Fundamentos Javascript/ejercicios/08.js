@@ -1,8 +1,13 @@
 function esNumeroEntero(numero) {
-  // La función recibe un argumento "numero".
-  // Verifica si este es un número entero o no.
-  // Returna true si lo es, de lo contrario, retorna false.
-  // Tu código:
+  // Verificamos si el número es entero o no
+  if (numero % 1 === 0) {
+    return true; // Devuelve true si es un número entero
+  } else {
+    return false; // Devuelve false si no es un número entero
+  }
 }
 
-module.exports = esNumeroEntero;
+
+
+// Imprimimos el resultado
+console.log(esNumeroEntero(17)); // Debería imprimir true
